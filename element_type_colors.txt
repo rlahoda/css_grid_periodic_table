@@ -1,0 +1,24 @@
+actinide #e8ef54
+
+alkali_metal #85ef54
+  unknown_but_predicted_to_be_an_alkali_metal #67a04d
+
+alkaline_earth_metal #ef548c
+
+diatomic_nonmetal #3390ff
+
+lanthanide #8554ef
+
+metalloid #b769e4
+  unknown_probably_metalloid #7d5892
+
+noble_gas #ee833e
+  unknown_predicted_to_be_noble_gas #9b6b4b
+
+polyatomic_nonmetal #176cd1
+
+post-transition_metal #17d14f
+  unknown_probably_post-transition_metal #79c48f
+
+transition_metal #17d1ac
+  unknown_probably_transition_metal #5db8a5

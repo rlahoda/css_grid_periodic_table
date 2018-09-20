@@ -1,0 +1,960 @@
+.chemTable {
+ display: grid;
+ grid-template-columns: repeat(18, 1fr);
+ grid-template-rows: repeat(11, 100px);
+ grid-gap: 1em;
+}
+
+.element {
+ background-color: grey;
+ padding: 5px;
+ display: grid;
+ grid-template-rows: repeat(7, 1fr);
+ grid-template-columns: repeat(6, 1fr);
+}
+
+.atomicWeight {
+ text-align: left;
+ font-size: 0.5em;
+ grid-column-start: 1;
+ grid-column-end: 2;
+ grid-row-start: 1;
+ grid-row-end: 2;
+}
+
+.elementSymbol {
+ text-align: center;
+ font-size: 2.5em;
+ grid-column-start: 1;
+ grid-column-end: -1;
+ grid-row-start: 2;
+ grid-row-end: 6;
+}
+
+.elementName {
+ text-align: center;
+ font-size: 1em;
+ grid-column-start: 1;
+ grid-column-end: -1;
+ grid-row-start: 6;
+ grid-row-end: 7;
+}
+
+.atomicMass {
+ text-align: center;
+ font-size: 0.75em;
+ grid-column-start: 1;
+ grid-column-end: -1;
+ grid-row-start: 7;
+ grid-row-end: -1;
+}
+
+/* --- Categories of elements ---*/
+.actinide {
+ background-color: blue;
+ color: white;
+}
+
+.alkali_metal {
+ background-color: blue;
+ color: white;
+}
+
+.alkaline_earth_metal {
+ background-color: blue;
+ color: white;
+}
+
+.diatomic_nonmetal {
+ background-color: blue;
+ color: white;
+}
+
+.lanthanide {
+ background-color: blue;
+ color: white;
+}
+
+.metalloid {
+ background-color: orange;
+ color: white;
+}
+
+.noble_gas {
+ background-color: green;
+ color: white;
+}
+
+.polyatomic_nonmetal {
+ background-color: blue;
+ color: white;
+}
+
+.post-transition_metal {
+ background-color: blue;
+ color: white;
+}
+
+.transition_metal {
+ background-color: red;
+ color: white;
+}
+
+.unknown_but_predicted_to_be_an_alkali_metal {
+ background-color: blue;
+ color: white;
+}
+
+.unknown_predicted_to_be_noble_gas {
+ background-color: blue;
+ color: white;
+}
+
+.unknown_probably_metalloid {
+ background-color: blue;
+ color: white;
+}
+
+.unknown_probably_post-transition_metal {
+ background-color: blue;
+ color: white;
+}
+
+.unknown_probably_transition_metal {
+ background-color: blue;
+ color: white;
+}
+
+/* --- Individual elements ---*/
+.hydrogen {
+ grid-column-start: 1;
+ grid-column-end: 2;
+ grid-row-start: 1;
+ grid-row-end: 2;
+}
+
+.helium {
+ grid-column-start: 18;
+ grid-column-end: -1;
+ grid-row-start: 1;
+ grid-row-end: 2;
+}
+
+.lithium {
+ grid-column-start: 1;
+ grid-column-end: 2;
+ grid-row-start: 2;
+ grid-row-end: 3;
+}
+
+.beryllium {
+ grid-column-start: 2;
+ grid-column-end: 3;
+ grid-row-start: 2;
+ grid-row-end: 3;
+}
+
+.boron {
+ grid-column-start: 13;
+ grid-column-end: 14;
+ grid-row-start: 2;
+ grid-row-end: 3;
+}
+
+.carbon {
+ grid-column-start: 14;
+ grid-column-end: 15;
+ grid-row-start: 2;
+ grid-row-end: 3;
+}
+
+.nitrogen {
+ grid-column-start: 15;
+ grid-column-end: 16;
+ grid-row-start: 2;
+ grid-row-end: 3;
+}
+
+.oxygen {
+ grid-column-start: 16;
+ grid-column-end: 17;
+ grid-row-start: 2;
+ grid-row-end: 3;
+}
+
+.fluorine {
+ grid-column-start: 17;
+ grid-column-end: 18;
+ grid-row-start: 2;
+ grid-row-end: 3;
+}
+
+.neon {
+ grid-column-start: 18;
+ grid-column-end: -1;
+ grid-row-start: 2;
+ grid-row-end: 3;
+}
+
+.sodium {
+ grid-column-start: 1;
+ grid-column-end: 2;
+ grid-row-start: 3;
+ grid-row-end: 4;
+}
+
+.magnesium {
+ grid-column-start: 2;
+ grid-column-end: 3;
+ grid-row-start: 3;
+ grid-row-end: 4;
+}
+
+.aluminium {
+ grid-column-start: 13;
+ grid-column-end: 14;
+ grid-row-start: 3;
+ grid-row-end: 4;
+}
+
+.silicon {
+ grid-column-start: 14;
+ grid-column-end: 15;
+ grid-row-start: 3;
+ grid-row-end: 4;
+}
+
+.phosphorus {
+ grid-column-start: 15;
+ grid-column-end: 16;
+ grid-row-start: 3;
+ grid-row-end: 4;
+}
+
+.sulfur {
+ grid-column-start: 16;
+ grid-column-end: 17;
+ grid-row-start: 3;
+ grid-row-end: 4;
+}
+
+.chlorine {
+ grid-column-start: 17;
+ grid-column-end: 18;
+ grid-row-start: 3;
+ grid-row-end: 4;
+}
+
+.argon {
+ grid-column-start: 18;
+ grid-column-end: -1;
+ grid-row-start: 3;
+ grid-row-end: 4;
+}
+
+.potassium {
+ grid-column-start: 1;
+ grid-column-end: 2;
+ grid-row-start: 4;
+ grid-row-end: 5;
+}
+
+.calcium {
+ grid-column-start: 2;
+ grid-column-end: 3;
+ grid-row-start: 4;
+ grid-row-end: 5;
+}
+
+.scandium {
+ grid-column-start: 3;
+ grid-column-end: 4;
+ grid-row-start: 4;
+ grid-row-end: 5;
+}
+
+.titanium {
+ grid-column-start: 4;
+ grid-column-end: 5;
+ grid-row-start: 4;
+ grid-row-end: 5;
+}
+
+.vanadium {
+ grid-column-start: 5;
+ grid-column-end: 6;
+ grid-row-start: 4;
+ grid-row-end: 5;
+}
+
+.chromium {
+ grid-column-start: 6;
+ grid-column-end: 7;
+ grid-row-start: 4;
+ grid-row-end: 5;
+}
+
+.manganese {
+ grid-column-start: 7;
+ grid-column-end: 8;
+ grid-row-start: 4;
+ grid-row-end: 5;
+}
+
+.iron {
+ grid-column-start: 8;
+ grid-column-end: 9;
+ grid-row-start: 4;
+ grid-row-end: 5;
+}
+
+.cobalt {
+ grid-column-start: 9;
+ grid-column-end: 10;
+ grid-row-start: 4;
+ grid-row-end: 5;
+}
+
+.nickel {
+ grid-column-start: 10;
+ grid-column-end: 11;
+ grid-row-start: 4;
+ grid-row-end: 5;
+}
+
+.copper {
+ grid-column-start: 11;
+ grid-column-end: 12;
+ grid-row-start: 4;
+ grid-row-end: 5;
+}
+
+.zinc {
+ grid-column-start: 12;
+ grid-column-end: 13;
+ grid-row-start: 4;
+ grid-row-end: 5;
+}
+
+.gallium {
+ grid-column-start: 13;
+ grid-column-end: 14;
+ grid-row-start: 4;
+ grid-row-end: 5;
+}
+
+.germanium {
+ grid-column-start: 14;
+ grid-column-end: 15;
+ grid-row-start: 4;
+ grid-row-end: 5;
+}
+
+.arsenic {
+ grid-column-start: 15;
+ grid-column-end: 16;
+ grid-row-start: 4;
+ grid-row-end: 5;
+}
+
+.selenium {
+ grid-column-start: 16;
+ grid-column-end: 17;
+ grid-row-start: 4;
+ grid-row-end: 5;
+}
+
+.bromine {
+ grid-column-start: 17;
+ grid-column-end: 18;
+ grid-row-start: 4;
+ grid-row-end: 5;
+}
+
+.krypton {
+ grid-column-start: 18;
+ grid-column-end: -1;
+ grid-row-start: 4;
+ grid-row-end: 5;
+}
+
+.rubidium {
+ grid-column-start: 1;
+ grid-column-end: 2;
+ grid-row-start: 5;
+ grid-row-end: 6;
+}
+
+.strontium {
+ grid-column-start: 2;
+ grid-column-end: 3;
+ grid-row-start: 5;
+ grid-row-end: 6;
+}
+
+.yttrium {
+ grid-column-start: 3;
+ grid-column-end: 4;
+ grid-row-start: 5;
+ grid-row-end: 6;
+}
+
+.zirconium {
+ grid-column-start: 4;
+ grid-column-end: 5;
+ grid-row-start: 5;
+ grid-row-end: 6;
+}
+
+.niobium {
+ grid-column-start: 5;
+ grid-column-end: 6;
+ grid-row-start: 5;
+ grid-row-end: 6;
+}
+
+.molybdenum {
+ grid-column-start: 6;
+ grid-column-end: 7;
+ grid-row-start: 5;
+ grid-row-end: 6;
+}
+
+.technetium {
+ grid-column-start: 7;
+ grid-column-end: 8;
+ grid-row-start: 5;
+ grid-row-end: 6;
+}
+
+.ruthenium {
+ grid-column-start: 8;
+ grid-column-end: 9;
+ grid-row-start: 5;
+ grid-row-end: 6;
+}
+
+.rhodium {
+ grid-column-start: 9;
+ grid-column-end: 10;
+ grid-row-start: 5;
+ grid-row-end: 6;
+}
+
+.palladium {
+ grid-column-start: 10;
+ grid-column-end: 11;
+ grid-row-start: 5;
+ grid-row-end: 6;
+}
+
+.silver {
+ grid-column-start: 11;
+ grid-column-end: 12;
+ grid-row-start: 5;
+ grid-row-end: 6;
+}
+
+.cadmium {
+ grid-column-start: 12;
+ grid-column-end: 13;
+ grid-row-start: 5;
+ grid-row-end: 6;
+}
+
+.indium {
+ grid-column-start: 13;
+ grid-column-end: 14;
+ grid-row-start: 5;
+ grid-row-end: 6;
+}
+
+.tin {
+ grid-column-start: 14;
+ grid-column-end: 15;
+ grid-row-start: 5;
+ grid-row-end: 6;
+}
+
+.antimony {
+ grid-column-start: 15;
+ grid-column-end: 16;
+ grid-row-start: 5;
+ grid-row-end: 6;
+}
+
+.tellurium {
+ grid-column-start: 16;
+ grid-column-end: 17;
+ grid-row-start: 5;
+ grid-row-end: 6;
+}
+
+.iodine {
+ grid-column-start: 17;
+ grid-column-end: 18;
+ grid-row-start: 5;
+ grid-row-end: 6;
+}
+
+.xenon {
+ grid-column-start: 18;
+ grid-column-end: -1;
+ grid-row-start: 5;
+ grid-row-end: 6;
+}
+
+.cesium {
+ grid-column-start: 1;
+ grid-column-end: 2;
+ grid-row-start: 6;
+ grid-row-end: 7;
+}
+
+.barium {
+ grid-column-start: 2;
+ grid-column-end: 3;
+ grid-row-start: 6;
+ grid-row-end: 7;
+}
+
+.lanthanum {
+ grid-column-start: 3;
+ grid-column-end: 4;
+ grid-row-start: 9;
+ grid-row-end: 10;
+}
+
+.cerium {
+ grid-column-start: 4;
+ grid-column-end: 5;
+ grid-row-start: 9;
+ grid-row-end: 10;
+}
+
+.praseodymium {
+ grid-column-start: 5;
+ grid-column-end: 6;
+ grid-row-start: 9;
+ grid-row-end: 10;
+}
+
+.neodymium {
+ grid-column-start: 6;
+ grid-column-end: 7;
+ grid-row-start: 9;
+ grid-row-end: 10;
+}
+
+.promethium {
+ grid-column-start: 7;
+ grid-column-end: 8;
+ grid-row-start: 9;
+ grid-row-end: 10;
+}
+
+.samarium {
+ grid-column-start: 8;
+ grid-column-end: 9;
+ grid-row-start: 9;
+ grid-row-end: 10;
+}
+
+.europium {
+ grid-column-start: 9;
+ grid-column-end: 10;
+ grid-row-start: 9;
+ grid-row-end: 10;
+}
+
+.gadolinium {
+ grid-column-start: 10;
+ grid-column-end: 11;
+ grid-row-start: 9;
+ grid-row-end: 10;
+}
+
+.terbium {
+ grid-column-start: 11;
+ grid-column-end: 12;
+ grid-row-start: 9;
+ grid-row-end: 10;
+}
+
+.dysprosium {
+ grid-column-start: 12;
+ grid-column-end: 13;
+ grid-row-start: 9;
+ grid-row-end: 10;
+}
+
+.holmium {
+ grid-column-start: 13;
+ grid-column-end: 14;
+ grid-row-start: 9;
+ grid-row-end: 10;
+}
+
+.erbium {
+ grid-column-start: 14;
+ grid-column-end: 15;
+ grid-row-start: 9;
+ grid-row-end: 10;
+}
+
+.thulium {
+ grid-column-start: 15;
+ grid-column-end: 16;
+ grid-row-start: 9;
+ grid-row-end: 10;
+}
+
+.ytterbium {
+ grid-column-start: 16;
+ grid-column-end: 17;
+ grid-row-start: 9;
+ grid-row-end: 10;
+}
+
+.lutetium {
+ grid-column-start: 17;
+ grid-column-end: 18;
+ grid-row-start: 9;
+ grid-row-end: 10;
+}
+
+.hafnium {
+ grid-column-start: 4;
+ grid-column-end: 5;
+ grid-row-start: 6;
+ grid-row-end: 7;
+}
+
+.tantalum {
+ grid-column-start: 5;
+ grid-column-end: 6;
+ grid-row-start: 6;
+ grid-row-end: 7;
+}
+
+.tungsten {
+ grid-column-start: 6;
+ grid-column-end: 7;
+ grid-row-start: 6;
+ grid-row-end: 7;
+}
+
+.rhenium {
+ grid-column-start: 7;
+ grid-column-end: 8;
+ grid-row-start: 6;
+ grid-row-end: 7;
+}
+
+.osmium {
+ grid-column-start: 8;
+ grid-column-end: 9;
+ grid-row-start: 6;
+ grid-row-end: 7;
+}
+
+.iridium {
+ grid-column-start: 9;
+ grid-column-end: 10;
+ grid-row-start: 6;
+ grid-row-end: 7;
+}
+
+.platinum {
+ grid-column-start: 10;
+ grid-column-end: 11;
+ grid-row-start: 6;
+ grid-row-end: 7;
+}
+
+.gold {
+ grid-column-start: 11;
+ grid-column-end: 12;
+ grid-row-start: 6;
+ grid-row-end: 7;
+}
+
+.mercury {
+ grid-column-start: 12;
+ grid-column-end: 13;
+ grid-row-start: 6;
+ grid-row-end: 7;
+}
+
+.thallium {
+ grid-column-start: 13;
+ grid-column-end: 14;
+ grid-row-start: 6;
+ grid-row-end: 7;
+}
+
+.lead {
+ grid-column-start: 14;
+ grid-column-end: 15;
+ grid-row-start: 6;
+ grid-row-end: 7;
+}
+
+.bismuth {
+ grid-column-start: 15;
+ grid-column-end: 16;
+ grid-row-start: 6;
+ grid-row-end: 7;
+}
+
+.polonium {
+ grid-column-start: 16;
+ grid-column-end: 17;
+ grid-row-start: 6;
+ grid-row-end: 7;
+}
+
+.astatine {
+ grid-column-start: 17;
+ grid-column-end: 18;
+ grid-row-start: 6;
+ grid-row-end: 7;
+}
+
+.radon {
+ grid-column-start: 18;
+ grid-column-end: -1;
+ grid-row-start: 6;
+ grid-row-end: 7;
+}
+
+.francium {
+ grid-column-start: 1;
+ grid-column-end: 2;
+ grid-row-start: 7;
+ grid-row-end: 8;
+}
+
+.radium {
+ grid-column-start: 2;
+ grid-column-end: 3;
+ grid-row-start: 7;
+ grid-row-end: 8;
+}
+
+.actinium {
+ grid-column-start: 3;
+ grid-column-end: 4;
+ grid-row-start: 10;
+ grid-row-end: 11;
+}
+
+.thorium {
+ grid-column-start: 4;
+ grid-column-end: 5;
+ grid-row-start: 10;
+ grid-row-end: 11;
+}
+
+.protactinium {
+ grid-column-start: 5;
+ grid-column-end: 6;
+ grid-row-start: 10;
+ grid-row-end: 11;
+}
+
+.uranium {
+ grid-column-start: 6;
+ grid-column-end: 7;
+ grid-row-start: 10;
+ grid-row-end: 11;
+}
+
+.neptunium {
+ grid-column-start: 7;
+ grid-column-end: 8;
+ grid-row-start: 10;
+ grid-row-end: 11;
+}
+
+.plutonium {
+ grid-column-start: 8;
+ grid-column-end: 9;
+ grid-row-start: 10;
+ grid-row-end: 11;
+}
+
+.americium {
+ grid-column-start: 9;
+ grid-column-end: 10;
+ grid-row-start: 10;
+ grid-row-end: 11;
+}
+
+.curium {
+ grid-column-start: 10;
+ grid-column-end: 11;
+ grid-row-start: 10;
+ grid-row-end: 11;
+}
+
+.berkelium {
+ grid-column-start: 11;
+ grid-column-end: 12;
+ grid-row-start: 10;
+ grid-row-end: 11;
+}
+
+.californium {
+ grid-column-start: 12;
+ grid-column-end: 13;
+ grid-row-start: 10;
+ grid-row-end: 11;
+}
+
+.einsteinium {
+ grid-column-start: 13;
+ grid-column-end: 14;
+ grid-row-start: 10;
+ grid-row-end: 11;
+}
+
+.fermium {
+ grid-column-start: 14;
+ grid-column-end: 15;
+ grid-row-start: 10;
+ grid-row-end: 11;
+}
+
+.mendelevium {
+ grid-column-start: 15;
+ grid-column-end: 16;
+ grid-row-start: 10;
+ grid-row-end: 11;
+}
+
+.nobelium {
+ grid-column-start: 16;
+ grid-column-end: 17;
+ grid-row-start: 10;
+ grid-row-end: 11;
+}
+
+.lawrencium {
+ grid-column-start: 17;
+ grid-column-end: 18;
+ grid-row-start: 10;
+ grid-row-end: 11;
+}
+
+.rutherfordium {
+ grid-column-start: 4;
+ grid-column-end: 5;
+ grid-row-start: 7;
+ grid-row-end: 8;
+}
+
+.dubnium {
+ grid-column-start: 5;
+ grid-column-end: 6;
+ grid-row-start: 7;
+ grid-row-end: 8;
+}
+
+.seaborgium {
+ grid-column-start: 6;
+ grid-column-end: 7;
+ grid-row-start: 7;
+ grid-row-end: 8;
+}
+
+.bohrium {
+ grid-column-start: 7;
+ grid-column-end: 8;
+ grid-row-start: 7;
+ grid-row-end: 8;
+}
+
+.hassium {
+ grid-column-start: 8;
+ grid-column-end: 9;
+ grid-row-start: 7;
+ grid-row-end: 8;
+}
+
+.meitnerium {
+ grid-column-start: 9;
+ grid-column-end: 10;
+ grid-row-start: 7;
+ grid-row-end: 8;
+}
+
+.darmstadtium {
+ grid-column-start: 10;
+ grid-column-end: 11;
+ grid-row-start: 7;
+ grid-row-end: 8;
+}
+
+.roentgenium {
+ grid-column-start: 11;
+ grid-column-end: 12;
+ grid-row-start: 7;
+ grid-row-end: 8;
+}
+
+.copernicium {
+ grid-column-start: 12;
+ grid-column-end: 13;
+ grid-row-start: 7;
+ grid-row-end: 8;
+}
+
+.nihonium {
+ grid-column-start: 13;
+ grid-column-end: 14;
+ grid-row-start: 7;
+ grid-row-end: 8;
+}
+
+.flerovium {
+ grid-column-start: 14;
+ grid-column-end: 15;
+ grid-row-start: 7;
+ grid-row-end: 8;
+}
+
+.moscovium {
+ grid-column-start: 15;
+ grid-column-end: 16;
+ grid-row-start: 7;
+ grid-row-end: 8;
+}
+
+.livermorium {
+ grid-column-start: 16;
+ grid-column-end: 17;
+ grid-row-start: 7;
+ grid-row-end: 8;
+}
+
+.tennessine {
+ grid-column-start: 17;
+ grid-column-end: 18;
+ grid-row-start: 7;
+ grid-row-end: 8;
+}
+
+.oganesson {
+ grid-column-start: 18;
+ grid-column-end: -1;
+ grid-row-start: 7;
+ grid-row-end: 8;
+}
+
+.ununennium {
+ grid-column-start: 1;
+ grid-column-end: 2;
+ grid-row-start: 8;
+ grid-row-end: 9;
+}

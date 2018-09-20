@@ -1,0 +1,38 @@
+{#<div class="chemTable">
+<div class="element actinide actinide_spacer">
+  <div class="">
+    55-71
+  </div>
+</div>
+  <div class="element lanthanide lanthanide_spacer">
+  <div class="">
+    89-103
+  </div>
+</div>
+  {% for element in elements %}
+    <div id="{{ element.name|lower }}" class="element {{ element.category|url_encode }} {{ element.name|lower }}" onmouseup="fcnDetails('{{ element.name|lower }}')">
+      <div class="atomicWeight">{{element.number}}</div>
+      <div class="elementSymbol">{{element.symbol}}</div>
+      <div class="elementName">{{element.name}}</div>
+      <div class="atomicMass">{{element.atomic_mass}}</div>
+    </div>
+  {% endfor %}
+</div> #
+}
+{# {% for element in elements %}
+    {{ element.name|lower }}
+{% endfor %}
+<br>
+{% for element in elements %}
+    {{ element.category|url_encode }}
+{% endfor %} #}
+
+
+{# {% for element in elements %}
+.{{ element.name|lower }} {
+grid-column-start: {{element.xpos}};
+grid-column-end: {% if element.xpos == 18 %}-1{% else %}{{element.xpos + 1}}{% endif %};
+grid-row-start: {{element.ypos}};
+grid-row-end: {{element.ypos + 1}};
+}
+{% endfor %} #}

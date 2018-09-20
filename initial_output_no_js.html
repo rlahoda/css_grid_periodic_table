@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="import" href="js/elements.js">
+    <title></title>
+  </head>
+  <body>
+    <div class="chemTable">
+  <div class="pageInfo">
+    <h1>Periodic Table of Elements</h1>
+    <h2>Click on an element to view more information</h2>
+  </div>
+<div class="element lanthanide actinide_spacer element_spacer">
+  <div class="spacer_text">
+    55-71
+  </div>
+</div>
+  <div class="element actinide lanthanide_spacer element_spacer">
+  <div class="spacer_text">
+    89-103
+  </div>
+</div>
+    <div class="extra_row_spacer">
+</div>
+    <div class="extra_row_background">
+</div>
+      <div id="hydrogen" class="element diatomic_nonmetal hydrogen" onmouseup="fcnDetails('hydrogen')">
+      <div class="atomicWeight">1</div>
+      <div class="elementSymbol">H</div>
+      <div class="elementName">Hydrogen</div>
+      <div class="atomicMass">1.008</div>
+    </div>
+      <div id="helium" class="element noble_gas helium" onmouseup="fcnDetails('helium')">
+      <div class="atomicWeight">2</div>
+      <div class="elementSymbol">He</div>
+      <div class="elementName">Helium</div>
+      <div class="atomicMass">4.0026022</div>
+    </div>
+      <div id="lithium" class="element alkali_metal lithium" onmouseup="fcnDetails('lithium')">
+      <div class="atomicWeight">3</div>
+      <div class="elementSymbol">Li</div>
+      <div class="elementName">Lithium</div>
+      <div class="atomicMass">6.94</div>
+    </div>
+      <div id="beryllium" class="element alkaline_earth_metal beryllium" onmouseup="fcnDetails('beryllium')">
+      <div class="atomicWeight">4</div>
+      <div class="elementSymbol">Be</div>
+      <div class="elementName">Beryllium</div>
+      <div class="atomicMass">9.01218315</div>
+    </div>
+      <div id="boron" class="element metalloid boron" onmouseup="fcnDetails('boron')">
+      <div class="atomicWeight">5</div>
+      <div class="elementSymbol">B</div>
+      <div class="elementName">Boron</div>
+      <div class="atomicMass">10.81</div>
+    </div>
+      <div id="carbon" class="element polyatomic_nonmetal carbon" onmouseup="fcnDetails('carbon')">
+      <div class="atomicWeight">6</div>
+      <div class="elementSymbol">C</div>
+      <div class="elementName">Carbon</div>
+      <div class="atomicMass">12.011</div>
+    </div>
+      <div id="nitrogen" class="element diatomic_nonmetal nitrogen" onmouseup="fcnDetails('nitrogen')">
+      <div class="atomicWeight">7</div>
+      <div class="elementSymbol">N</div>
+      <div class="elementName">Nitrogen</div>
+      <div class="atomicMass">14.007</div>
+    </div>
+      <div id="oxygen" class="element diatomic_nonmetal oxygen" onmouseup="fcnDetails('oxygen')">
+      <div class="atomicWeight">8</div>
+      <div class="elementSymbol">O</div>
+      <div class="elementName">Oxygen</div>
+      <div class="atomicMass">15.999</div>
+    </div>
+      <div id="fluorine" class="element diatomic_nonmetal fluorine" onmouseup="fcnDetails('fluorine')">
+      <div class="atomicWeight">9</div>
+      <div class="elementSymbol">F</div>
+      <div class="elementName">Fluorine</div>
+      <div class="atomicMass">18.9984031636</div>
+    </div>
+      <div id="neon" class="element noble_gas neon" onmouseup="fcnDetails('neon')">
+      <div class="atomicWeight">10</div>
+      <div class="elementSymbol">Ne</div>
+      <div class="elementName">Neon</div>
+      <div class="atomicMass">20.17976</div>
+    </div>
+      <div id="sodium" class="element alkali_metal sodium" onmouseup="fcnDetails('sodium')">
+      <div class="atomicWeight">11</div>
+      <div class="elementSymbol">Na</div>
+      <div class="elementName">Sodium</div>
+      <div class="atomicMass">22.989769282</div>
+    </div>
+      <div id="magnesium" class="element alkaline_earth_metal magnesium" onmouseup="fcnDetails('magnesium')">
+      <div class="atomicWeight">12</div>
+      <div class="elementSymbol">Mg</div>
+      <div class="elementName">Magnesium</div>
+      <div class="atomicMass">24.305</div>
+    </div>
+      <div id="aluminium" class="element post-transition_metal aluminium" onmouseup="fcnDetails('aluminium')">
+      <div class="atomicWeight">13</div>
+      <div class="elementSymbol">Al</div>
+      <div class="elementName">Aluminium</div>
+      <div class="atomicMass">26.98153857</div>
+    </div>
+      <div id="silicon" class="element metalloid silicon" onmouseup="fcnDetails('silicon')">
+      <div class="atomicWeight">14</div>
+      <div class="elementSymbol">Si</div>
+      <div class="elementName">Silicon</div>
+      <div class="atomicMass">28.085</div>
+    </div>
+      <div id="phosphorus" class="element polyatomic_nonmetal phosphorus" onmouseup="fcnDetails('phosphorus')">
+      <div class="atomicWeight">15</div>
+      <div class="elementSymbol">P</div>
+      <div class="elementName">Phosphorus</div>
+      <div class="atomicMass">30.9737619985</div>
+    </div>
+      <div id="sulfur" class="element polyatomic_nonmetal sulfur" onmouseup="fcnDetails('sulfur')">
+      <div class="atomicWeight">16</div>
+      <div class="elementSymbol">S</div>
+      <div class="elementName">Sulfur</div>
+      <div class="atomicMass">32.06</div>
+    </div>
+      <div id="chlorine" class="element diatomic_nonmetal chlorine" onmouseup="fcnDetails('chlorine')">
+      <div class="atomicWeight">17</div>
+      <div class="elementSymbol">Cl</div>
+      <div class="elementName">Chlorine</div>
+      <div class="atomicMass">35.45</div>
+    </div>
+      <div id="argon" class="element noble_gas argon" onmouseup="fcnDetails('argon')">
+      <div class="atomicWeight">18</div>
+      <div class="elementSymbol">Ar</div>
+      <div class="elementName">Argon</div>
+      <div class="atomicMass">39.9481</div>
+    </div>
+      <div id="potassium" class="element alkali_metal potassium" onmouseup="fcnDetails('potassium')">
+      <div class="atomicWeight">19</div>
+      <div class="elementSymbol">K</div>
+      <div class="elementName">Potassium</div>
+      <div class="atomicMass">39.09831</div>
+    </div>
+      <div id="calcium" class="element alkaline_earth_metal calcium" onmouseup="fcnDetails('calcium')">
+      <div class="atomicWeight">20</div>
+      <div class="elementSymbol">Ca</div>
+      <div class="elementName">Calcium</div>
+      <div class="atomicMass">40.0784</div>
+    </div>
+      <div id="scandium" class="element transition_metal scandium" onmouseup="fcnDetails('scandium')">
+      <div class="atomicWeight">21</div>
+      <div class="elementSymbol">Sc</div>
+      <div class="elementName">Scandium</div>
+      <div class="atomicMass">44.9559085</div>
+    </div>
+      <div id="titanium" class="element transition_metal titanium" onmouseup="fcnDetails('titanium')">
+      <div class="atomicWeight">22</div>
+      <div class="elementSymbol">Ti</div>
+      <div class="elementName">Titanium</div>
+      <div class="atomicMass">47.8671</div>
+    </div>
+      <div id="vanadium" class="element transition_metal vanadium" onmouseup="fcnDetails('vanadium')">
+      <div class="atomicWeight">23</div>
+      <div class="elementSymbol">V</div>
+      <div class="elementName">Vanadium</div>
+      <div class="atomicMass">50.94151</div>
+    </div>
+      <div id="chromium" class="element transition_metal chromium" onmouseup="fcnDetails('chromium')">
+      <div class="atomicWeight">24</div>
+      <div class="elementSymbol">Cr</div>
+      <div class="elementName">Chromium</div>
+      <div class="atomicMass">51.99616</div>
+    </div>
+      <div id="manganese" class="element transition_metal manganese" onmouseup="fcnDetails('manganese')">
+      <div class="atomicWeight">25</div>
+      <div class="elementSymbol">Mn</div>
+      <div class="elementName">Manganese</div>
+      <div class="atomicMass">54.9380443</div>
+    </div>
+      <div id="iron" class="element transition_metal iron" onmouseup="fcnDetails('iron')">
+      <div class="atomicWeight">26</div>
+      <div class="elementSymbol">Fe</div>
+      <div class="elementName">Iron</div>
+      <div class="atomicMass">55.8452</div>
+    </div>
+      <div id="cobalt" class="element transition_metal cobalt" onmouseup="fcnDetails('cobalt')">
+      <div class="atomicWeight">27</div>
+      <div class="elementSymbol">Co</div>
+      <div class="elementName">Cobalt</div>
+      <div class="atomicMass">58.9331944</div>
+    </div>
+      <div id="nickel" class="element transition_metal nickel" onmouseup="fcnDetails('nickel')">
+      <div class="atomicWeight">28</div>
+      <div class="elementSymbol">Ni</div>
+      <div class="elementName">Nickel</div>
+      <div class="atomicMass">58.69344</div>
+    </div>
+      <div id="copper" class="element transition_metal copper" onmouseup="fcnDetails('copper')">
+      <div class="atomicWeight">29</div>
+      <div class="elementSymbol">Cu</div>
+      <div class="elementName">Copper</div>
+      <div class="atomicMass">63.5463</div>
+    </div>
+      <div id="zinc" class="element transition_metal zinc" onmouseup="fcnDetails('zinc')">
+      <div class="atomicWeight">30</div>
+      <div class="elementSymbol">Zn</div>
+      <div class="elementName">Zinc</div>
+      <div class="atomicMass">65.382</div>
+    </div>
+      <div id="gallium" class="element post-transition_metal gallium" onmouseup="fcnDetails('gallium')">
+      <div class="atomicWeight">31</div>
+      <div class="elementSymbol">Ga</div>
+      <div class="elementName">Gallium</div>
+      <div class="atomicMass">69.7231</div>
+    </div>
+      <div id="germanium" class="element metalloid germanium" onmouseup="fcnDetails('germanium')">
+      <div class="atomicWeight">32</div>
+      <div class="elementSymbol">Ge</div>
+      <div class="elementName">Germanium</div>
+      <div class="atomicMass">72.6308</div>
+    </div>
+      <div id="arsenic" class="element metalloid arsenic" onmouseup="fcnDetails('arsenic')">
+      <div class="atomicWeight">33</div>
+      <div class="elementSymbol">As</div>
+      <div class="elementName">Arsenic</div>
+      <div class="atomicMass">74.9215956</div>
+    </div>
+      <div id="selenium" class="element polyatomic_nonmetal selenium" onmouseup="fcnDetails('selenium')">
+      <div class="atomicWeight">34</div>
+      <div class="elementSymbol">Se</div>
+      <div class="elementName">Selenium</div>
+      <div class="atomicMass">78.9718</div>
+    </div>
+      <div id="bromine" class="element diatomic_nonmetal bromine" onmouseup="fcnDetails('bromine')">
+      <div class="atomicWeight">35</div>
+      <div class="elementSymbol">Br</div>
+      <div class="elementName">Bromine</div>
+      <div class="atomicMass">79.904</div>
+    </div>
+      <div id="krypton" class="element noble_gas krypton" onmouseup="fcnDetails('krypton')">
+      <div class="atomicWeight">36</div>
+      <div class="elementSymbol">Kr</div>
+      <div class="elementName">Krypton</div>
+      <div class="atomicMass">83.7982</div>
+    </div>
+      <div id="rubidium" class="element alkali_metal rubidium" onmouseup="fcnDetails('rubidium')">
+      <div class="atomicWeight">37</div>
+      <div class="elementSymbol">Rb</div>
+      <div class="elementName">Rubidium</div>
+      <div class="atomicMass">85.46783</div>
+    </div>
+      <div id="strontium" class="element alkaline_earth_metal strontium" onmouseup="fcnDetails('strontium')">
+      <div class="atomicWeight">38</div>
+      <div class="elementSymbol">Sr</div>
+      <div class="elementName">Strontium</div>
+      <div class="atomicMass">87.621</div>
+    </div>
+      <div id="yttrium" class="element transition_metal yttrium" onmouseup="fcnDetails('yttrium')">
+      <div class="atomicWeight">39</div>
+      <div class="elementSymbol">Y</div>
+      <div class="elementName">Yttrium</div>
+      <div class="atomicMass">88.905842</div>
+    </div>
+      <div id="zirconium" class="element transition_metal zirconium" onmouseup="fcnDetails('zirconium')">
+      <div class="atomicWeight">40</div>
+      <div class="elementSymbol">Zr</div>
+      <div class="elementName">Zirconium</div>
+      <div class="atomicMass">91.2242</div>
+    </div>
+      <div id="niobium" class="element transition_metal niobium" onmouseup="fcnDetails('niobium')">
+      <div class="atomicWeight">41</div>
+      <div class="elementSymbol">Nb</div>
+      <div class="elementName">Niobium</div>
+      <div class="atomicMass">92.906372</div>
+    </div>
+      <div id="molybdenum" class="element transition_metal molybdenum" onmouseup="fcnDetails('molybdenum')">
+      <div class="atomicWeight">42</div>
+      <div class="elementSymbol">Mo</div>
+      <div class="elementName">Molybdenum</div>
+      <div class="atomicMass">95.951</div>
+    </div>
+      <div id="technetium" class="element transition_metal technetium" onmouseup="fcnDetails('technetium')">
+      <div class="atomicWeight">43</div>
+      <div class="elementSymbol">Tc</div>
+      <div class="elementName">Technetium</div>
+      <div class="atomicMass">98</div>
+    </div>
+      <div id="ruthenium" class="element transition_metal ruthenium" onmouseup="fcnDetails('ruthenium')">
+      <div class="atomicWeight">44</div>
+      <div class="elementSymbol">Ru</div>
+      <div class="elementName">Ruthenium</div>
+      <div class="atomicMass">101.072</div>
+    </div>
+      <div id="rhodium" class="element transition_metal rhodium" onmouseup="fcnDetails('rhodium')">
+      <div class="atomicWeight">45</div>
+      <div class="elementSymbol">Rh</div>
+      <div class="elementName">Rhodium</div>
+      <div class="atomicMass">102.905502</div>
+    </div>
+      <div id="palladium" class="element transition_metal palladium" onmouseup="fcnDetails('palladium')">
+      <div class="atomicWeight">46</div>
+      <div class="elementSymbol">Pd</div>
+      <div class="elementName">Palladium</div>
+      <div class="atomicMass">106.421</div>
+    </div>
+      <div id="silver" class="element transition_metal silver" onmouseup="fcnDetails('silver')">
+      <div class="atomicWeight">47</div>
+      <div class="elementSymbol">Ag</div>
+      <div class="elementName">Silver</div>
+      <div class="atomicMass">107.86822</div>
+    </div>
+      <div id="cadmium" class="element transition_metal cadmium" onmouseup="fcnDetails('cadmium')">
+      <div class="atomicWeight">48</div>
+      <div class="elementSymbol">Cd</div>
+      <div class="elementName">Cadmium</div>
+      <div class="atomicMass">112.4144</div>
+    </div>
+      <div id="indium" class="element post-transition_metal indium" onmouseup="fcnDetails('indium')">
+      <div class="atomicWeight">49</div>
+      <div class="elementSymbol">In</div>
+      <div class="elementName">Indium</div>
+      <div class="atomicMass">114.8181</div>
+    </div>
+      <div id="tin" class="element post-transition_metal tin" onmouseup="fcnDetails('tin')">
+      <div class="atomicWeight">50</div>
+      <div class="elementSymbol">Sn</div>
+      <div class="elementName">Tin</div>
+      <div class="atomicMass">118.7107</div>
+    </div>
+      <div id="antimony" class="element metalloid antimony" onmouseup="fcnDetails('antimony')">
+      <div class="atomicWeight">51</div>
+      <div class="elementSymbol">Sb</div>
+      <div class="elementName">Antimony</div>
+      <div class="atomicMass">121.7601</div>
+    </div>
+      <div id="tellurium" class="element metalloid tellurium" onmouseup="fcnDetails('tellurium')">
+      <div class="atomicWeight">52</div>
+      <div class="elementSymbol">Te</div>
+      <div class="elementName">Tellurium</div>
+      <div class="atomicMass">127.603</div>
+    </div>
+      <div id="iodine" class="element diatomic_nonmetal iodine" onmouseup="fcnDetails('iodine')">
+      <div class="atomicWeight">53</div>
+      <div class="elementSymbol">I</div>
+      <div class="elementName">Iodine</div>
+      <div class="atomicMass">126.904473</div>
+    </div>
+      <div id="xenon" class="element noble_gas xenon" onmouseup="fcnDetails('xenon')">
+      <div class="atomicWeight">54</div>
+      <div class="elementSymbol">Xe</div>
+      <div class="elementName">Xenon</div>
+      <div class="atomicMass">131.2936</div>
+    </div>
+      <div id="cesium" class="element alkali_metal cesium" onmouseup="fcnDetails('cesium')">
+      <div class="atomicWeight">55</div>
+      <div class="elementSymbol">Cs</div>
+      <div class="elementName">Cesium</div>
+      <div class="atomicMass">132.905451966</div>
+    </div>
+      <div id="barium" class="element alkaline_earth_metal barium" onmouseup="fcnDetails('barium')">
+      <div class="atomicWeight">56</div>
+      <div class="elementSymbol">Ba</div>
+      <div class="elementName">Barium</div>
+      <div class="atomicMass">137.3277</div>
+    </div>
+      <div id="lanthanum" class="element lanthanide lanthanum" onmouseup="fcnDetails('lanthanum')">
+      <div class="atomicWeight">57</div>
+      <div class="elementSymbol">La</div>
+      <div class="elementName">Lanthanum</div>
+      <div class="atomicMass">138.905477</div>
+    </div>
+      <div id="cerium" class="element lanthanide cerium" onmouseup="fcnDetails('cerium')">
+      <div class="atomicWeight">58</div>
+      <div class="elementSymbol">Ce</div>
+      <div class="elementName">Cerium</div>
+      <div class="atomicMass">140.1161</div>
+    </div>
+      <div id="praseodymium" class="element lanthanide praseodymium" onmouseup="fcnDetails('praseodymium')">
+      <div class="atomicWeight">59</div>
+      <div class="elementSymbol">Pr</div>
+      <div class="elementName">Praseodymium</div>
+      <div class="atomicMass">140.907662</div>
+    </div>
+      <div id="neodymium" class="element lanthanide neodymium" onmouseup="fcnDetails('neodymium')">
+      <div class="atomicWeight">60</div>
+      <div class="elementSymbol">Nd</div>
+      <div class="elementName">Neodymium</div>
+      <div class="atomicMass">144.2423</div>
+    </div>
+      <div id="promethium" class="element lanthanide promethium" onmouseup="fcnDetails('promethium')">
+      <div class="atomicWeight">61</div>
+      <div class="elementSymbol">Pm</div>
+      <div class="elementName">Promethium</div>
+      <div class="atomicMass">145</div>
+    </div>
+      <div id="samarium" class="element lanthanide samarium" onmouseup="fcnDetails('samarium')">
+      <div class="atomicWeight">62</div>
+      <div class="elementSymbol">Sm</div>
+      <div class="elementName">Samarium</div>
+      <div class="atomicMass">150.362</div>
+    </div>
+      <div id="europium" class="element lanthanide europium" onmouseup="fcnDetails('europium')">
+      <div class="atomicWeight">63</div>
+      <div class="elementSymbol">Eu</div>
+      <div class="elementName">Europium</div>
+      <div class="atomicMass">151.9641</div>
+    </div>
+      <div id="gadolinium" class="element lanthanide gadolinium" onmouseup="fcnDetails('gadolinium')">
+      <div class="atomicWeight">64</div>
+      <div class="elementSymbol">Gd</div>
+      <div class="elementName">Gadolinium</div>
+      <div class="atomicMass">157.253</div>
+    </div>
+      <div id="terbium" class="element lanthanide terbium" onmouseup="fcnDetails('terbium')">
+      <div class="atomicWeight">65</div>
+      <div class="elementSymbol">Tb</div>
+      <div class="elementName">Terbium</div>
+      <div class="atomicMass">158.925352</div>
+    </div>
+      <div id="dysprosium" class="element lanthanide dysprosium" onmouseup="fcnDetails('dysprosium')">
+      <div class="atomicWeight">66</div>
+      <div class="elementSymbol">Dy</div>
+      <div class="elementName">Dysprosium</div>
+      <div class="atomicMass">162.5001</div>
+    </div>
+      <div id="holmium" class="element lanthanide holmium" onmouseup="fcnDetails('holmium')">
+      <div class="atomicWeight">67</div>
+      <div class="elementSymbol">Ho</div>
+      <div class="elementName">Holmium</div>
+      <div class="atomicMass">164.930332</div>
+    </div>
+      <div id="erbium" class="element lanthanide erbium" onmouseup="fcnDetails('erbium')">
+      <div class="atomicWeight">68</div>
+      <div class="elementSymbol">Er</div>
+      <div class="elementName">Erbium</div>
+      <div class="atomicMass">167.2593</div>
+    </div>
+      <div id="thulium" class="element lanthanide thulium" onmouseup="fcnDetails('thulium')">
+      <div class="atomicWeight">69</div>
+      <div class="elementSymbol">Tm</div>
+      <div class="elementName">Thulium</div>
+      <div class="atomicMass">168.934222</div>
+    </div>
+      <div id="ytterbium" class="element lanthanide ytterbium" onmouseup="fcnDetails('ytterbium')">
+      <div class="atomicWeight">70</div>
+      <div class="elementSymbol">Yb</div>
+      <div class="elementName">Ytterbium</div>
+      <div class="atomicMass">173.0451</div>
+    </div>
+      <div id="lutetium" class="element lanthanide lutetium" onmouseup="fcnDetails('lutetium')">
+      <div class="atomicWeight">71</div>
+      <div class="elementSymbol">Lu</div>
+      <div class="elementName">Lutetium</div>
+      <div class="atomicMass">174.96681</div>
+    </div>
+      <div id="hafnium" class="element transition_metal hafnium" onmouseup="fcnDetails('hafnium')">
+      <div class="atomicWeight">72</div>
+      <div class="elementSymbol">Hf</div>
+      <div class="elementName">Hafnium</div>
+      <div class="atomicMass">178.492</div>
+    </div>
+      <div id="tantalum" class="element transition_metal tantalum" onmouseup="fcnDetails('tantalum')">
+      <div class="atomicWeight">73</div>
+      <div class="elementSymbol">Ta</div>
+      <div class="elementName">Tantalum</div>
+      <div class="atomicMass">180.947882</div>
+    </div>
+      <div id="tungsten" class="element transition_metal tungsten" onmouseup="fcnDetails('tungsten')">
+      <div class="atomicWeight">74</div>
+      <div class="elementSymbol">W</div>
+      <div class="elementName">Tungsten</div>
+      <div class="atomicMass">183.841</div>
+    </div>
+      <div id="rhenium" class="element transition_metal rhenium" onmouseup="fcnDetails('rhenium')">
+      <div class="atomicWeight">75</div>
+      <div class="elementSymbol">Re</div>
+      <div class="elementName">Rhenium</div>
+      <div class="atomicMass">186.2071</div>
+    </div>
+      <div id="osmium" class="element transition_metal osmium" onmouseup="fcnDetails('osmium')">
+      <div class="atomicWeight">76</div>
+      <div class="elementSymbol">Os</div>
+      <div class="elementName">Osmium</div>
+      <div class="atomicMass">190.233</div>
+    </div>
+      <div id="iridium" class="element transition_metal iridium" onmouseup="fcnDetails('iridium')">
+      <div class="atomicWeight">77</div>
+      <div class="elementSymbol">Ir</div>
+      <div class="elementName">Iridium</div>
+      <div class="atomicMass">192.2173</div>
+    </div>
+      <div id="platinum" class="element transition_metal platinum" onmouseup="fcnDetails('platinum')">
+      <div class="atomicWeight">78</div>
+      <div class="elementSymbol">Pt</div>
+      <div class="elementName">Platinum</div>
+      <div class="atomicMass">195.0849</div>
+    </div>
+      <div id="gold" class="element transition_metal gold" onmouseup="fcnDetails('gold')">
+      <div class="atomicWeight">79</div>
+      <div class="elementSymbol">Au</div>
+      <div class="elementName">Gold</div>
+      <div class="atomicMass">196.9665695</div>
+    </div>
+      <div id="mercury" class="element transition_metal mercury" onmouseup="fcnDetails('mercury')">
+      <div class="atomicWeight">80</div>
+      <div class="elementSymbol">Hg</div>
+      <div class="elementName">Mercury</div>
+      <div class="atomicMass">200.5923</div>
+    </div>
+      <div id="thallium" class="element post-transition_metal thallium" onmouseup="fcnDetails('thallium')">
+      <div class="atomicWeight">81</div>
+      <div class="elementSymbol">Tl</div>
+      <div class="elementName">Thallium</div>
+      <div class="atomicMass">204.38</div>
+    </div>
+      <div id="lead" class="element post-transition_metal lead" onmouseup="fcnDetails('lead')">
+      <div class="atomicWeight">82</div>
+      <div class="elementSymbol">Pb</div>
+      <div class="elementName">Lead</div>
+      <div class="atomicMass">207.21</div>
+    </div>
+      <div id="bismuth" class="element post-transition_metal bismuth" onmouseup="fcnDetails('bismuth')">
+      <div class="atomicWeight">83</div>
+      <div class="elementSymbol">Bi</div>
+      <div class="elementName">Bismuth</div>
+      <div class="atomicMass">208.980401</div>
+    </div>
+      <div id="polonium" class="element post-transition_metal polonium" onmouseup="fcnDetails('polonium')">
+      <div class="atomicWeight">84</div>
+      <div class="elementSymbol">Po</div>
+      <div class="elementName">Polonium</div>
+      <div class="atomicMass">209</div>
+    </div>
+      <div id="astatine" class="element metalloid astatine" onmouseup="fcnDetails('astatine')">
+      <div class="atomicWeight">85</div>
+      <div class="elementSymbol">At</div>
+      <div class="elementName">Astatine</div>
+      <div class="atomicMass">210</div>
+    </div>
+      <div id="radon" class="element noble_gas radon" onmouseup="fcnDetails('radon')">
+      <div class="atomicWeight">86</div>
+      <div class="elementSymbol">Rn</div>
+      <div class="elementName">Radon</div>
+      <div class="atomicMass">222</div>
+    </div>
+      <div id="francium" class="element alkali_metal francium" onmouseup="fcnDetails('francium')">
+      <div class="atomicWeight">87</div>
+      <div class="elementSymbol">Fr</div>
+      <div class="elementName">Francium</div>
+      <div class="atomicMass">223</div>
+    </div>
+      <div id="radium" class="element alkaline_earth_metal radium" onmouseup="fcnDetails('radium')">
+      <div class="atomicWeight">88</div>
+      <div class="elementSymbol">Ra</div>
+      <div class="elementName">Radium</div>
+      <div class="atomicMass">226</div>
+    </div>
+      <div id="actinium" class="element actinide actinium" onmouseup="fcnDetails('actinium')">
+      <div class="atomicWeight">89</div>
+      <div class="elementSymbol">Ac</div>
+      <div class="elementName">Actinium</div>
+      <div class="atomicMass">227</div>
+    </div>
+      <div id="thorium" class="element actinide thorium" onmouseup="fcnDetails('thorium')">
+      <div class="atomicWeight">90</div>
+      <div class="elementSymbol">Th</div>
+      <div class="elementName">Thorium</div>
+      <div class="atomicMass">232.03774</div>
+    </div>
+      <div id="protactinium" class="element actinide protactinium" onmouseup="fcnDetails('protactinium')">
+      <div class="atomicWeight">91</div>
+      <div class="elementSymbol">Pa</div>
+      <div class="elementName">Protactinium</div>
+      <div class="atomicMass">231.035882</div>
+    </div>
+      <div id="uranium" class="element actinide uranium" onmouseup="fcnDetails('uranium')">
+      <div class="atomicWeight">92</div>
+      <div class="elementSymbol">U</div>
+      <div class="elementName">Uranium</div>
+      <div class="atomicMass">238.028913</div>
+    </div>
+      <div id="neptunium" class="element actinide neptunium" onmouseup="fcnDetails('neptunium')">
+      <div class="atomicWeight">93</div>
+      <div class="elementSymbol">Np</div>
+      <div class="elementName">Neptunium</div>
+      <div class="atomicMass">237</div>
+    </div>
+      <div id="plutonium" class="element actinide plutonium" onmouseup="fcnDetails('plutonium')">
+      <div class="atomicWeight">94</div>
+      <div class="elementSymbol">Pu</div>
+      <div class="elementName">Plutonium</div>
+      <div class="atomicMass">244</div>
+    </div>
+      <div id="americium" class="element actinide americium" onmouseup="fcnDetails('americium')">
+      <div class="atomicWeight">95</div>
+      <div class="elementSymbol">Am</div>
+      <div class="elementName">Americium</div>
+      <div class="atomicMass">243</div>
+    </div>
+      <div id="curium" class="element actinide curium" onmouseup="fcnDetails('curium')">
+      <div class="atomicWeight">96</div>
+      <div class="elementSymbol">Cm</div>
+      <div class="elementName">Curium</div>
+      <div class="atomicMass">247</div>
+    </div>
+      <div id="berkelium" class="element actinide berkelium" onmouseup="fcnDetails('berkelium')">
+      <div class="atomicWeight">97</div>
+      <div class="elementSymbol">Bk</div>
+      <div class="elementName">Berkelium</div>
+      <div class="atomicMass">247</div>
+    </div>
+      <div id="californium" class="element actinide californium" onmouseup="fcnDetails('californium')">
+      <div class="atomicWeight">98</div>
+      <div class="elementSymbol">Cf</div>
+      <div class="elementName">Californium</div>
+      <div class="atomicMass">251</div>
+    </div>
+      <div id="einsteinium" class="element actinide einsteinium" onmouseup="fcnDetails('einsteinium')">
+      <div class="atomicWeight">99</div>
+      <div class="elementSymbol">Es</div>
+      <div class="elementName">Einsteinium</div>
+      <div class="atomicMass">252</div>
+    </div>
+      <div id="fermium" class="element actinide fermium" onmouseup="fcnDetails('fermium')">
+      <div class="atomicWeight">100</div>
+      <div class="elementSymbol">Fm</div>
+      <div class="elementName">Fermium</div>
+      <div class="atomicMass">257</div>
+    </div>
+      <div id="mendelevium" class="element actinide mendelevium" onmouseup="fcnDetails('mendelevium')">
+      <div class="atomicWeight">101</div>
+      <div class="elementSymbol">Md</div>
+      <div class="elementName">Mendelevium</div>
+      <div class="atomicMass">258</div>
+    </div>
+      <div id="nobelium" class="element actinide nobelium" onmouseup="fcnDetails('nobelium')">
+      <div class="atomicWeight">102</div>
+      <div class="elementSymbol">No</div>
+      <div class="elementName">Nobelium</div>
+      <div class="atomicMass">259</div>
+    </div>
+      <div id="lawrencium" class="element actinide lawrencium" onmouseup="fcnDetails('lawrencium')">
+      <div class="atomicWeight">103</div>
+      <div class="elementSymbol">Lr</div>
+      <div class="elementName">Lawrencium</div>
+      <div class="atomicMass">266</div>
+    </div>
+      <div id="rutherfordium" class="element transition_metal rutherfordium" onmouseup="fcnDetails('rutherfordium')">
+      <div class="atomicWeight">104</div>
+      <div class="elementSymbol">Rf</div>
+      <div class="elementName">Rutherfordium</div>
+      <div class="atomicMass">267</div>
+    </div>
+      <div id="dubnium" class="element transition_metal dubnium" onmouseup="fcnDetails('dubnium')">
+      <div class="atomicWeight">105</div>
+      <div class="elementSymbol">Db</div>
+      <div class="elementName">Dubnium</div>
+      <div class="atomicMass">268</div>
+    </div>
+      <div id="seaborgium" class="element transition_metal seaborgium" onmouseup="fcnDetails('seaborgium')">
+      <div class="atomicWeight">106</div>
+      <div class="elementSymbol">Sg</div>
+      <div class="elementName">Seaborgium</div>
+      <div class="atomicMass">269</div>
+    </div>
+      <div id="bohrium" class="element transition_metal bohrium" onmouseup="fcnDetails('bohrium')">
+      <div class="atomicWeight">107</div>
+      <div class="elementSymbol">Bh</div>
+      <div class="elementName">Bohrium</div>
+      <div class="atomicMass">270</div>
+    </div>
+      <div id="hassium" class="element transition_metal hassium" onmouseup="fcnDetails('hassium')">
+      <div class="atomicWeight">108</div>
+      <div class="elementSymbol">Hs</div>
+      <div class="elementName">Hassium</div>
+      <div class="atomicMass">269</div>
+    </div>
+      <div id="meitnerium" class="element unknown_probably_transition_metal meitnerium" onmouseup="fcnDetails('meitnerium')">
+      <div class="atomicWeight">109</div>
+      <div class="elementSymbol">Mt</div>
+      <div class="elementName">Meitnerium</div>
+      <div class="atomicMass">278</div>
+    </div>
+      <div id="darmstadtium" class="element unknown_probably_transition_metal darmstadtium" onmouseup="fcnDetails('darmstadtium')">
+      <div class="atomicWeight">110</div>
+      <div class="elementSymbol">Ds</div>
+      <div class="elementName">Darmstadtium</div>
+      <div class="atomicMass">281</div>
+    </div>
+      <div id="roentgenium" class="element unknown_probably_transition_metal roentgenium" onmouseup="fcnDetails('roentgenium')">
+      <div class="atomicWeight">111</div>
+      <div class="elementSymbol">Rg</div>
+      <div class="elementName">Roentgenium</div>
+      <div class="atomicMass">282</div>
+    </div>
+      <div id="copernicium" class="element transition_metal copernicium" onmouseup="fcnDetails('copernicium')">
+      <div class="atomicWeight">112</div>
+      <div class="elementSymbol">Cn</div>
+      <div class="elementName">Copernicium</div>
+      <div class="atomicMass">285</div>
+    </div>
+      <div id="nihonium" class="element unknown_probably_transition_metal nihonium" onmouseup="fcnDetails('nihonium')">
+      <div class="atomicWeight">113</div>
+      <div class="elementSymbol">Nh</div>
+      <div class="elementName">Nihonium</div>
+      <div class="atomicMass">286</div>
+    </div>
+      <div id="flerovium" class="element post-transition_metal flerovium" onmouseup="fcnDetails('flerovium')">
+      <div class="atomicWeight">114</div>
+      <div class="elementSymbol">Fl</div>
+      <div class="elementName">Flerovium</div>
+      <div class="atomicMass">289</div>
+    </div>
+      <div id="moscovium" class="element unknown_probably_post-transition_metal moscovium" onmouseup="fcnDetails('moscovium')">
+      <div class="atomicWeight">115</div>
+      <div class="elementSymbol">Mc</div>
+      <div class="elementName">Moscovium</div>
+      <div class="atomicMass">289</div>
+    </div>
+      <div id="livermorium" class="element unknown_probably_post-transition_metal livermorium" onmouseup="fcnDetails('livermorium')">
+      <div class="atomicWeight">116</div>
+      <div class="elementSymbol">Lv</div>
+      <div class="elementName">Livermorium</div>
+      <div class="atomicMass">293</div>
+    </div>
+      <div id="tennessine" class="element unknown_probably_metalloid tennessine" onmouseup="fcnDetails('tennessine')">
+      <div class="atomicWeight">117</div>
+      <div class="elementSymbol">Ts</div>
+      <div class="elementName">Tennessine</div>
+      <div class="atomicMass">294</div>
+    </div>
+      <div id="oganesson" class="element unknown_predicted_to_be_noble_gas oganesson" onmouseup="fcnDetails('oganesson')">
+      <div class="atomicWeight">118</div>
+      <div class="elementSymbol">Og</div>
+      <div class="elementName">Oganesson</div>
+      <div class="atomicMass">294</div>
+    </div>
+      <div id="ununennium" class="element unknown_but_predicted_to_be_an_alkali_metal ununennium" onmouseup="fcnDetails('ununennium')">
+      <div class="atomicWeight">119</div>
+      <div class="elementSymbol">Uue</div>
+      <div class="elementName">Ununennium</div>
+      <div class="atomicMass">315</div>
+    </div>
+  </div>
+  </body>
+</html>

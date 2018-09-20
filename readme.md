@@ -1,0 +1,1 @@
+This is a periodic table of elements laid out in CSS Grid. It uses an AJAX call to a Github repo containing a JSON listing of all of the elements in the table and the various attributes and properties. 
