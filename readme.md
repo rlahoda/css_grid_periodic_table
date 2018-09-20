@@ -27,3 +27,12 @@ The second action in the loop is the creation of the actual HTML that is used to
 There are some values that I want to make sure are consistent and lowercase, so these use the `toLowerCase()` method. I use the element category as the basis for the element colors in the table but some of the categories have spaces in them. To get rid of spaces and any odd characters that might show up in the data, I have a `replace()` method that includes a regex filter to eliminate any characters or spaces that aren't numbers or letters and replace them with underscores.
 
 As the loop iterates, the generated element html is then appended to the `div` with an id of `chemTable`.
+
+For the pop up box that shows the element details there's a small script that adds and removes an extra css class of `element_detail`. When the class is added the grid-column-start and -end and the grid-row-start and -end are changed to stretch across most of the table. Unfortunately, this property is not able to be animated so, at least for now, the transition is just a cut over to the new location.
+
+Adding the class also triggers other elements to show or shift to display correctly in the new location. In the CSS there is either a child combiner, such as `.element_detail > .atomicWeight` or a descendent combiner, such as `.element_detail .hidden` that trigger this behavior.
+
+## To Install
+If you want to play around with this project, download the repo, ensure that you have NPM installed and run `$ npm install` on the command line at the root of the project files. This should install all of the necessary dependencies for the project. Once that has completed, run `$ gulp` on the command line to run the build process, start a webserver, and open your browser with a window showing the project.
+
+As the Twig and CSS files are updated and saved, the the page will reload to show the changes. 
