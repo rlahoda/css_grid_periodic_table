@@ -60,8 +60,22 @@ background: linear-gradient(to right, #A7BFE8, #6190E8); /* W3C, IE 10+/ Edge, F
   display: grid;
   grid-template-rows: repeat(8, 1fr);
   grid-template-columns: repeat(6, 1fr);
-  filter: drop-shadow(6px 6px 5px #555)
+  filter: drop-shadow(6px 6px 5px #555);
+  animation: fade-in 0.4s ease;
 }
+
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+
+    }
+    100% {
+        opacity: 1;
+
+    }
+}
+
 
 .atomicWeight {
  //   background-color:blue;
@@ -253,7 +267,7 @@ align-items: center; /* align vertical */
 .summary {
 //      background-color:green;
  text-align: left;
- font-size: 1em;
+ font-size: 0.8em;
  line-height: 1.25;
  grid-column-start: 4;
  grid-column-end: -1;
@@ -263,9 +277,9 @@ align-items: center; /* align vertical */
  justify-content: center; /* align horizontal */
  align-items: center; /* align vertical */
 
-  // @include respond-at($bp-med) {
-  //   font-size: 0.6em;
-  // }
+  @include respond-at($bp-med) {
+    font-size: 1em;
+  }
 }
 
 /* --- Categories of elements ---*/
@@ -405,5 +419,16 @@ div.element_detail {
   grid-column-end: 16;
   grid-row-start: 3;
   grid-row-end: 8;
+  }
+animation: fade2 0.5s;
+}
+@keyframes fade2 {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
   }
 }
