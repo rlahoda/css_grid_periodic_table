@@ -1,22 +1,24 @@
 let elementId = "none";
 
-function fcnDetails(id) {
-  if (elementId != "none") {
-    if (elementId != id) {
+function fcnDetails(id) { // This function adds and removes the CSS class that will make the elements show up in the details view. It uses a single parameter of the name of the element that was clicked on.
+
+  if (elementId != "none") { // First it checks to see if the elementId variable is not empty. If it's not, that means there is or was another element that was viewed in the details view.
+    if (elementId != id) { // If the element name stored in elementId is not the same as the name of the element clicked on it looks for the element listed in elementId and removes the element_detail class from it. Then the element_detail class is added to the element that was clicked on.
       document.getElementById(elementId).classList.remove("element_detail");
       document.getElementById(id).classList.add("element_detail");
     } else {
-      document.getElementById(id).classList.remove("element_detail");
+      document.getElementById(id).classList.remove("element_detail"); // If the element name in elementId is the same as the one that was clicked on, that means the user clicked on the element details view, so the element_detail class is removed to return the element to the standard size
     }
   } else {
-    document.getElementById(id).classList.add("element_detail");
+    document.getElementById(id).classList.add("element_detail"); // If the value of elementId is empty, then just add the element_detail class to the element that was clicked on
   }
   elementId = id;
-  if (window.getSelection) {window.getSelection().removeAllRanges();}
+  if (window.getSelection) {window.getSelection().removeAllRanges();} // For some reason, when I would click on elements, it would keep selecting random parts of the text. I'm not sure why it was happening, but it was so these two lines basically deselect any text that was being selected when the user clicks
  else if (document.selection) {document.selection.empty();}
 }
 
-let info = [];
+let info = []; // This creates an empty array for the information coming from the AJAX call to be stored in. This information will be used to generate the elements, add their information, set the colors, and set their position on the table
+
 // To change the request, edit this url
 // let url = "https://raw.githubusercontent.com/Bowserinator/Periodic-Table-JSON/master/PeriodicTableJSON.json";
 let url = "/scripts/elements.json";
@@ -48,7 +50,7 @@ window.onload = ajax;
 function elementBuilder() {
   let style = document.createElement('style');
   let elementList = info.elements;
-  for (var element of elementList) {
+  for (var element of elementList) { // This is a for..of loop that iterates over an iteratable object like an array or string or object. In this case it's iterating over the list of elements in the table and creating first the CSS then the HTML that will make up the table.
     // console.log(element);
     style.innerHTML += `.${element.name.toLowerCase()} {
       grid-column-start: ${element.xpos};
@@ -74,11 +76,11 @@ function elementBuilder() {
 
   }
 
-  let head = document.getElementsByTagName("head")[0].appendChild(style);
-// console.log(style.innerHTML);
+  let head = document.getElementsByTagName("head")[0].appendChild(style); // This looks in the document for the <head> tag, then in its children it adds the contents of the "style" variable, which is the variable that was used to store all of the CSS styles generated in the loop. This way the document ends up with a <style> tag in the <head> that has the specific styles needed to place each of the elements in their respective locations.
+
 
 }
-window.addEventListener('keypress', function(e) {
+window.addEventListener('keypress', function(e) { // This adds a listener that looks for the user to press the "esc" key. If the user does, the function first checks to see if there's an element that has the same ID as the ID listed in the variable 'elementId'. If there is, it looks at the classes on it and removes the 'element_detail' class, which is the class used to show the element details view.
     if(e.key == "Escape"){
     	let id = document.getElementById(elementId);
       if (id) {
