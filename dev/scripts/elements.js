@@ -19,9 +19,9 @@ function fcnDetails(id) { // This function adds and removes the CSS class that w
 
 let info = []; // This creates an empty array for the information coming from the AJAX call to be stored in. This information will be used to generate the elements, add their information, set the colors, and set their position on the table
 
-// To change the request, edit this url
-// let url = "https://raw.githubusercontent.com/Bowserinator/Periodic-Table-JSON/master/PeriodicTableJSON.json";
-let url = "/scripts/elements.json";
+// To change the request, edit this url The first URL listed is the actual Github location of the original JSON. The second is a local version of the JSON if you have downloaded this project from Github
+let url = "https://raw.githubusercontent.com/Bowserinator/Periodic-Table-JSON/master/PeriodicTableJSON.json";
+// let url = "/scripts/elements.json";
 // the ajax request
 function ajax() {
   let xhr = new XMLHttpRequest();

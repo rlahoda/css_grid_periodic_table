@@ -8,6 +8,15 @@ html {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
+body {
+  font-family: 'Raleway', sans-serif;
+  background: #6190E8;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#A7BFE8), to(#6190E8));
+  background: linear-gradient(to right, #A7BFE8, #6190E8);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
 h1 {
   font-size: 1.5em; }
   h1::first-letter {
@@ -19,19 +28,16 @@ h1 {
     h1 {
       font-size: 4em; } }
 
+p {
+  color: white; }
+
 .chemTable {
   font-family: 'Raleway', sans-serif;
   display: grid;
   grid-template-columns: repeat(18, 1fr);
   grid-template-rows: repeat(11, 60px);
   grid-gap: 0;
-  padding: 1em;
-  background: #6190E8;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#A7BFE8), to(#6190E8));
-  background: linear-gradient(to right, #A7BFE8, #6190E8);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  padding: 1em; }
   @media only screen and (min-width: 1060px) {
     .chemTable {
       grid-gap: 1em;
