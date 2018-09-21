@@ -16,8 +16,6 @@ function fcnDetails(id) {
  else if (document.selection) {document.selection.empty();}
 }
 
-
-
 let info = [];
 // To change the request, edit this url
 // let url = "https://raw.githubusercontent.com/Bowserinator/Periodic-Table-JSON/master/PeriodicTableJSON.json";
@@ -80,7 +78,14 @@ function elementBuilder() {
 // console.log(style.innerHTML);
 
 }
-
+window.addEventListener('keypress', function(e) {
+    if(e.key == "Escape"){
+    	let id = document.getElementById(elementId);
+      if (id) {
+        id.classList.remove("element_detail");
+      }
+    }
+});
 // `<div id="hydrogen" class="element diatomic_nonmetal hydrogen" onmouseup="fcnDetails('hydrogen')">
 // <div class="atomicWeight">1</div>
 // <div class="elementSymbol">H</div>
