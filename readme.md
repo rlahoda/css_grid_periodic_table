@@ -11,6 +11,19 @@ _I need to fix the `gulp` workflow so that it recognizes Javascript updates beca
 
 There is also a `reference_files` folder that contains some files that I generated as references to then copy/paste the resulting code into Codepen.
 
+## Key Files
+Since most of the files are in subdirectories in the `dev` folder, here are links to the ones that actually generate the content:
+
+[elements.js](dev/scripts/elements.js)
+This is the Javascript file that generates all of the individual elements and adds the classes for the details view and other functionality.
+
+[styles.scss](dev/scss/styles.scss)
+This is the SASS file that generates the styles.css file for the project.
+
+[index.twig](dev/templates/index.twig)
+This is the main Twig template file that generates the index.html file. In this project I'm not really taking advantage of Twig because I offloaded that functionality to the Javascript.
+
+
 ## How It Works
 The table is generated using Javascript. There is an AJAX call to a Github repo (https://github.com/Bowserinator/Periodic-Table-JSON) containing a JSON file of the entire periodic table. Once the data is received, the `elementBuilder` function is triggered which starts the process of creating the table.
 
@@ -35,4 +48,4 @@ Adding the class also triggers other elements to show or shift to display correc
 ## To Install
 If you want to play around with this project, download the repo, ensure that you have NPM installed and run `$ npm install` on the command line at the root of the project files. This should install all of the necessary dependencies for the project. Once that has completed, run `$ gulp` on the command line to run the build process, start a webserver, and open your browser with a window showing the project.
 
-As the Twig and CSS files are updated and saved, the the page will reload to show the changes. 
+As the Twig and CSS files are updated and saved, the the page will reload to show the changes.
