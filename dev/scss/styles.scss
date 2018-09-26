@@ -63,26 +63,13 @@ p {
 
 .element {
   background-color: grey;
+  opacity: 1;
   padding: 5px;
   display: grid;
   grid-template-rows: repeat(8, 1fr);
   grid-template-columns: repeat(6, 1fr);
   filter: drop-shadow(6px 6px 5px #555);
-  animation: fade-in 0.4s ease;
 }
-
-
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-
-    }
-    100% {
-        opacity: 1;
-
-    }
-}
-
 
 .atomicWeight {
  //   background-color:blue;
@@ -426,16 +413,5 @@ div.element_detail {
   grid-column-end: 16;
   grid-row-start: 2;
   grid-row-end: 8;
-  }
-animation: fade2 0.5s;
-}
-@keyframes fade2 {
-  0% {
-    opacity: 0;
-    width: 0;
-  }
-  100% {
-    opacity: 1;
-    width: 100%;
   }
 }
