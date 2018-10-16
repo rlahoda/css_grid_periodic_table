@@ -21,7 +21,7 @@ function fcnDetails(id) { // This function adds and removes the CSS class that w
     elementId = id;
     if (window.getSelection) {window.getSelection().removeAllRanges();} // For some reason, when I would click on elements, it would keep selecting random parts of the text. I'm not sure why it was happening, but it was so these two lines basically deselect any text that was being selected when the user clicks
    else if (document.selection) {document.selection.empty();}
-   // TweenMax.from(".element", 0.5, {opacity:0});
+   `// TweenMax.from(".element", 0.5, {opacity:0});`
   })
   tl.to(elId, 0.3, {opacity:1, scale: 1});
 }
@@ -89,10 +89,6 @@ function elementBuilder() {
 
   let head = document.getElementsByTagName("head")[0].appendChild(style); // This looks in the document for the <head> tag, then in its children it adds the contents of the "style" variable, which is the variable that was used to store all of the CSS styles generated in the loop. This way the document ends up with a <style> tag in the <head> that has the specific styles needed to place each of the elements in their respective locations.
 tl2.play();
-
-
-
-
 TweenMax.staggerFrom(".element", 0.5, {opacity:0}, 0.05);
 }
 
@@ -104,10 +100,3 @@ window.addEventListener('keypress', function(e) { // This adds a listener that l
       }
     }
 });
-// `<div id="hydrogen" class="element diatomic_nonmetal hydrogen" onmouseup="fcnDetails('hydrogen')">
-// <div class="atomicWeight">1</div>
-// <div class="elementSymbol">H</div>
-// <div class="elementName">Hydrogen</div>
-// <div class="atomicMass">1.008</div>
-// </div>`
-// document.getElementsByClassName('element').addEventListener("click", fcnDetails(this.id), false)
